@@ -5,54 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var carrito = [];
 
     var productos = [
-                { nombre: 'American Cookies', precio: 3039.35 },
-        { nombre: 'Banana Split', precio: 3039.35 },
-        { nombre: 'Chocolate', precio: 3039.35 },
-        { nombre: 'Chocolate al 80% Cacao', precio: 5617.75 },
-        { nombre: 'Chocolate Amargo', precio: 3039.35 },
-        { nombre: 'Chocolate C/Almendra', precio: 4971.45 },
-        { nombre: 'Chocolate Marroc', precio: 4971.45 },
-        { nombre: 'Chocolate Suizo', precio: 4971.45 },
-        { nombre: 'Chocotorta', precio: 3039.35 },
-        { nombre: 'Crema Americana', precio: 3039.35 },
-        { nombre: 'Creme Brulee', precio: 3039.35 },
-        { nombre: 'Crema Suiza', precio: 3039.35 },
-        { nombre: 'DDL Cookies', precio: 3039.35 },
-        { nombre: 'Dulce de Leche', precio: 3039.35 },
-        { nombre: 'DDL Casero', precio: 3039.35 },
-        { nombre: 'DDL Granizado', precio: 3039.35 },
-        { nombre: 'DDL Rocher', precio: 4971.45 },
-        { nombre: 'Marquisse de Chocolate', precio: 3334.75 },
-        { nombre: 'Lemon Pie', precio: 3039.35 },
-        { nombre: 'DDL Tentacion', precio: 3039.35  },
-        { nombre: 'Frambuesa', precio: 4971.45 },
-        { nombre: 'Frutilla a la Crema', precio: 3039.35 },
-        { nombre: 'Frutilla al Agua', precio: 3039.35  },
-        { nombre: 'Limonada C/Menta y Jengibre', precio: 3039.35  },
-        { nombre: 'Mango C/Naranja', precio: 3039.35 },
-        { nombre: 'Maracuya C/Naranja', precio: 3039.35  },
-        { nombre: 'Mousse de Maracuya', precio: 3039.35  },
-        { nombre: 'Naranja C/Frutilla', precio: 3039.35  },
-        { nombre: 'Sambayon', precio: 3334.75 },
-        { nombre: 'Tramontana', precio: 3039.35  },
-        { nombre: 'Pomelo C/Campari', precio: 4971.45 },
-        { nombre: 'Vainilla', precio: 3039.35  },
-        { nombre: 'Kinotos al Whisky', precio: 3039.35  },
-        { nombre: 'Tiramisu', precio: 3039.35  },
-        { nombre: 'Gianduia', precio: 4971.45 },
-        { nombre: 'Nocciola C/Nutella', precio: 4971.45 },
-        { nombre: 'Pistaccio Italiano', precio: 5617.75 },
-        { nombre: 'Sambayon Nueces y Pasas', precio: 4971.45 },
-        { nombre: 'Sambayon C/Cerezas', precio: 4971.45 },
-        { nombre: 'Anana', precio: 3039.35  },
-        { nombre: 'Coco C/DDL', precio: 3039.35 },
-        { nombre: 'Corinto C/Arandanos y Lima', precio: 4971.45 },
-        { nombre: 'DDL Granizado  C/DDL', precio: 3039.35 },
-        { nombre: 'Cheesecake de Lima', precio: 3334.75 },
-        { nombre: 'Chocolate Peru 56%', precio: 3334.75 },
-        { nombre: 'Limon', precio: 3039.35  },
-        { nombre: 'Mascarpone C/Frutos del Bosque', precio: 3039.35},
-        { nombre: 'Menta Granizada', precio: 3039.35  }
+                { nombre: 'Postre Americana con Dulce de Leche 240cc', precio: 1324.80 },
+        { nombre: 'Postre Americana Con Arandanos 240cc', precio: 1324.80 },
+        { nombre: 'Postre Banana Split 240cc', precio: 1324.80 },
+        { nombre: 'Postre Chocolate con Dulce de Leche 240cc', precio: 1324.80 },
+        { nombre: 'Postre Dulce de Leche Tentacion 240cc', precio: 1324.80 },
+        { nombre: 'Helado de Frutilla 240cc', precio: 1069.78 },
+        { nombre: 'Helado de Chocolate 240cc', precio: 1069.78 },
+        { nombre: 'Helado de Vainilla 240cc', precio: 1069.78 },
+        { nombre: 'Helado de Dulce de Leche 240cc', precio: 1069.78 },
 
         // ... tus productos aquí ...
     ];
@@ -150,8 +111,3 @@ document.addEventListener('DOMContentLoaded', function () {
         totalElement.textContent = totalPrecio.toFixed(2);
     }
     });
-
-    // Agregar evento al botón
-    var enviarPedidoBtn = document.getElementById('enviarPedido');
-    enviarPedidoBtn.addEventListener('click', enviarPedidoPorWhatsApp);
-});
